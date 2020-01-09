@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar5"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorWhite"
+        app:titleTextColor="@color/colorBlack"
+        app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgProfile"
+        android:background="@color/colorBlack"
+        android:layout_width="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="140dp"
+        android:layout_height="100dp"/>
+    <EditText
+        android:id="@+id/etFname"
+        android:hint="First Name*"
+        android:textSize="25dp"
+        android:background="@drawable/white_round"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/etLname"
+        android:background="@drawable/white_round"
+        android:hint="Second Name*"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/etPhone"
+        android:hint="Phone Number*"
+        android:background="@drawable/white_round"
+        android:textSize="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/etUserName"
+        android:hint="UserName*"
+        android:background="@drawable/white_round"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/etPass"
+        android:background="@drawable/white_round"
+        android:hint="Password*"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:inputType="textPassword"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/etCpass"
+        android:background="@drawable/white_round"
+        android:hint="Confirm Password"
+        android:textSize="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnSignUp"
+        android:textSize="28dp"
+        android:layout_marginTop="15dp"
+        android:text="SIGN UP"
+        android:background="@drawable/round_button"
+        android:textColor="@color/colorWhite"
+        android:layout_width="350dp"
+        android:layout_marginLeft="25dp"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

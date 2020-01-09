@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorLightGrey"
+    tools:context=".ui.more.MoreActivity">
+
+<TextView
+    android:background="@color/colorWhite"
+    android:text="About Foodmandu"
+    android:layout_marginTop="25dp"
+    android:textSize="20dp"
+    android:drawableLeft="@drawable/ic_warning_black_24dp"
+    android:textColor="@color/colorBlack"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+    <TextView
+        android:text="Feedback"
+        android:textSize="20dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorBlack"
+        android:drawableLeft="@drawable/ic_feedback_black_24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="Terms and Conditions"
+        android:textSize="20dp"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:drawableLeft="@drawable/ic_event_note_black_24dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="FAQS"
+        android:textSize="20dp"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="2dp"
+        android:drawableLeft="@drawable/ic_help_outline_black_24dp"
+        android:layout_width="match_parent"
+        android:paddingBottom="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnNextLog"
+        android:text="Login"
+        android:textSize="20dp"
+        android:background="@drawable/round_button"
+        android:textColor="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

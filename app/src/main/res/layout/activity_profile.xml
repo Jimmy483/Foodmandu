@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar1"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorWhite"
+            app:titleTextColor="@color/colorBlack"
+            app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+    android:background="@color/colorLightGrey"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:src="@drawable/defaultdp"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="300dp"
+        android:paddingLeft="10dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/uname"
+            android:text="You're not logged in"
+            android:paddingTop="20dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/phone"
+            android:textColor="@color/colorBlack"
+            android:text="Phone Number"
+            android:paddingTop="10dp"
+            android:drawableLeft="@drawable/ic_phone_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="MANAGE DELIVERY ADDRESS"
+            android:textSize="20dp"
+            android:paddingTop="15dp"
+            android:textColor="@color/colorGreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:text="EDIT"
+        android:textSize="25dp"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/etFirstName"
+            android:text="First Name"
+            android:textSize="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/etLastName"
+            android:text="Last Name"
+            android:paddingTop="10dp"
+            android:textSize="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/etNumber"
+            android:text="Phone Number"
+            android:textSize="25dp"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnSave"
+            android:text="SAVE"
+            android:textSize="20dp"
+            android:background="@drawable/round_button"
+            android:textColor="@color/colorWhite"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnLogOut"
+            android:text="LOG OUT"
+            android:layout_margin="10dp"
+            android:background="@drawable/round_button"
+            android:textSize="20dp"
+            android:textColor="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>
