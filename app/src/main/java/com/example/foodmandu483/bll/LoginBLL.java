@@ -20,7 +20,7 @@ public class LoginBLL {
         try{
             Response<SignUpResponse> loginResponse=usersCall.execute();
             //if(loginResponse.isSuccessful() && loginResponse.body().getStatus().equals("Login Success"))
-            if(loginResponse.isSuccessful())
+            if(loginResponse.isSuccessful()&& loginResponse.body().getStatus().equals("Login success!"))
             {
                 URL.token += loginResponse.body().getToken();
                 success=true;
